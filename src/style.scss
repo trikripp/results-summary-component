@@ -17,58 +17,57 @@ body {
     display: grid;
     justify-content: center;
     align-items: center;
-    
     width: 700px;
     height: 500px;
     grid-template-columns: 50% 50%;
     border-radius: 40px 40px;
-  }
-  .card-blue {
-    display: grid;
-    text-align: center;
-    background: rgb(95, 63, 252);
-    background: linear-gradient(
-      95deg,
-      rgba(95, 63, 252, 1) 0%,
-      rgba(79, 57, 244, 1) 62%,
-      rgba(51, 45, 233, 1) 96%
-    );
-    border-radius: 40px 40px;
-    height: 100%;
-    padding: 20px;
-  }
-  .card-blue-circles {
-    height: 200px;
-    shape-outside: circle();
-    clip-path: circle();
-    background: rgb(74, 37, 205);
-    background: linear-gradient(
-      95deg,
-      rgba(74, 37, 205, 1) 0%,
-      rgba(69, 49, 232, 1) 62%,
-      rgba(69, 51, 235, 1) 96%
-    );
-  }
-  .card-blue-header {
-    font-size: 20px;
-    font-weight: 800;
-    color: #aba1fa;
-  }
-  .card-blue-number-76 {
-    color: #f7f2ff;
-    padding-top: 50px;
-    font-size: 50px;
-  }
-  .card-blue-number-100 {
-    color: #aba1fa;
-  }
-  .card-blue-hfoot {
-    font-size: 25px;
-    color: #ebecfb;
-  }
-  .card-blue-paragraph {
-    font-size: 18px;
-    color: #CBCBFF;
 
+    &-blue {
+      display: grid;
+      text-align: center;
+      background: rgb(102, 66, 254);
+      background: linear-gradient(
+        0deg,
+        hsl(241, 81%, 54%),
+        hsl(252, 100%, 67%),
+      );
+
+      border-radius: 40px 40px;
+      height: 100%;
+      padding: 40px;
+
+      &-circles {
+        height: 200px;
+        shape-outside: circle();
+        clip-path: circle();
+        background: rgb(74, 37, 205);
+        background: linear-gradient(
+          180deg,
+          hsla(256, 72%, 46%, 1),
+          hsla(241, 72%, 46%, 0)
+        );
+      }
+      &-header {
+        font-size: 20px;
+        font-weight: 800;
+        color: #aba1fa;
+      }
+      &-number {
+        color: #f7f2ff;
+        padding-top: 50px;
+        font-size: 60px;
+      }
+      &-sub-number {
+        color: #aba1fa;
+      }
+      &-header-footer {
+        font-size: 30px;
+        color: #ebecfb;
+      }
+      &-paragraph {
+        font-size: 18px;
+        color: #cbcbff;
+      }
+    }
   }
 }
