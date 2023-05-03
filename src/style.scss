@@ -136,3 +136,20 @@ body {
     }
   }
 }
+@media screen and (max-width: 650px) {
+  body {
+    align-items: flex-start;
+    background-color: #ffffff;
+    .card {
+      box-shadow: none;
+      display: inline-block;
+      flex-direction: column;
+      &-blue {
+      border-radius: 0 0 1rem 1rem;
+      }
+      &-paragraph {
+        width: 250px;
+      }
+    }
+  }
+}
