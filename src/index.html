@@ -1,14 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.scss">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.scss" />
     <title>Results Summary Component</title>
-</head>
-<body>
-    <h1>proyecto</h1>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-blue">
+        <p class="card-blue-header">Your Result</p>
+        <div class="card-blue-circles">
+          <h2 class="card-blue-number">76</h2>
+          <p class="card-blue-sub-number">of 100</p>
+        </div>
+        <h4 class="card-blue-header-footer">Great</h4>
+        <p class="card-blue-paragraph">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </div>
+      <div class="card-white">
+        <p class="card-white-title">Summary</p>
+        <div class="card-white-task-red">
+          <div>
+            <img
+              src="./assets/icon-reaction.svg"
+              alt=""
+              class="card-white-icon"
+            />
+            <span class="card-white-red">Reaction</span>
+          </div>
+          <p class="card-white-number">80 / 100</p>
+        </div>
+        <div class="card-white-task-yellow">
+          <div>
+            <img
+              src="./assets/icon-memory.svg"
+              alt=""
+              class="card-white-icon"
+            />
+            <span class="card-white-yellow">Memory </span>
+          </div>
+          <p class="card-white-number">92 / 100</p>
+        </div>
+        <div class="card-white-task-green">
+          <div>
+            <img
+              src="./assets/icon-verbal.svg"
+              alt=""
+              class="card-white-icon"
+            />
+            <span class="card-white-green">Verbal</span>
+          </div>
+          <p class="card-white-number">61 / 100</p>
+        </div>
+        <div class="card-white-task-blue">
+          <div>
+            <img
+              src="./assets/icon-visual.svg"
+              alt=""
+              class="card-white-icon"
+            />
+            <span class="card-white-blue">Visual</span>
+          </div>
+          <p class="card-white-number">72 / 100</p>
+        </div>
+        <footer>
+          <button class="card-white-button">Continue</button>
+        </footer>
+      </div>
+    </div>
+
     <script src="./index.js"></script>
-</body>
+  </body>
 </html>
